@@ -1,0 +1,29 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Acerca de{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock %} <!-- Corregir -->
+
+{% block headers %}
+    <h1>Acerca de</h1>
+    <span class="subheading">Biografia</span>
+{% endblock %}
+
+{% block content %}
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 offset-lg-1" style="margin-top: 25px;">
+                    <img class="img-fluid avatar" src="{% static 'core/img/avatar.png' %}" alt="">
+                </div>
+                <div class="col-lg-7 col-md-8">
+                    <p></p>
+                    <h2 class="section-heading">Axel Carrillo</h2>
+                    <p>Apasionado por la tecnología desde siempre. Me dedico a arreglar computadoras y crear soluciones digitales para hacer la vida más fácil.
+                        Nací en Manta y aquí sigo, ayudando a vecinos y pequeños negocios con sus problemas técnicos.
+                        Me gusta resolver lo que otros creen perdido, desde laptops que no encienden hasta sistemas desorganizados.
+                        ¡La tecnología debería ser para todos!</p>
+                </div>
+            </div>
+        </div>
+
+{% endblock %}
